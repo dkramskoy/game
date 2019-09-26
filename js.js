@@ -2,9 +2,10 @@
             
     let modal = document.getElementById("modal");
         modal.addEventListener("click", event => {
-            if(!event.target.id || event.target.id !== "select") { return }
+            if(event.target.id && event.target.id === "select") { 
                 event.currentTarget.classList.add("hidden");
                 init()
+             }   
         }) 
       
     function init() {
