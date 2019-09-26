@@ -12,7 +12,7 @@
         let total = +document.getElementById("options").value; //total number of marker holders, e.g. 9, 16, 25
         let row = Math.sqrt(total); // number of rows, e.g. 3, 4, 5
         let current = Math.round( Math.floor(Math.random() * ((total - 1) - 0)) + 0 ); // current position of the marker
-        let numberOfSteps = total;
+        let numberOfSteps = 10;
         let selectedMarker = null; 
         let config = [
             {
